@@ -1,18 +1,18 @@
 # simple_stock_AI
 Predicting stock price of google using Tensorflow
 
-# 🏦 NeuralFinance: Deep Learning for Market Forecasting
+#  NeuralFinance: Deep Learning for Market Forecasting
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow 2.15](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)](https://tensorflow.org)
 [![Kaggle Data](https://img.shields.io/badge/Dataset-S%26P500-green.svg)](https://www.kaggle.com/datasets/camnugent/sandp500)
 
-## 📖 Project Architecture
+##  Project Architecture
 `NeuralFinance` is a supervised learning pipeline that utilizes a Multi-Layer Perceptron (MLP) architecture built on **TensorFlow** to predict equity prices. While traditional finance uses linear moving averages, this model utilizes non-linear activation functions to capture complex market "regimes."
 
 ---
 
-## 🧠 Model Mechanics: How it Thinks
+##  Model Mechanics: How it Thinks
 Most beginners treat AI as a "black box." Here is the step-by-step logic of how this model processes a stock price:
 
 ### 1. The Sliding Window (Temporal Transformation)
@@ -37,7 +37,7 @@ Our model consists of two "Dense" layers:
 
 ---
 
-## 📊 Evaluation & Metrics
+##  Evaluation & Metrics
 How do we know if the model is actually "smart" or just lucky?
 
 ### Loss Function: Mean Squared Error (MSE)
@@ -53,7 +53,7 @@ In Finance, **Accuracy** is a trap. A model can be 99% "accurate" but still lose
 
 ---
 
-## 🛠️ Tech Stack & Workflow
+##  Tech Stack & Workflow
 1. **Data Source:** Automated retrieval via `kagglehub` from the `mlg-ulb/creditcardfraud` and `sandp500` datasets.
 2. **Preprocessing:** `Scikit-Learn` for data splitting and scaling.
 3. **Engine:** `TensorFlow/Keras` for the neural network construction.
@@ -61,7 +61,7 @@ In Finance, **Accuracy** is a trap. A model can be 99% "accurate" but still lose
 
 ---
 
-## 🚦 Strategic Challenges (The "Fintech" Reality)
+##  Strategic Challenges (The "Fintech" Reality)
 Building a model is easy; making it work in the real world is hard. This project addresses (or acknowledges) three major hurdles:
 
 * **Non-Stationarity:** Stock market rules change. A model trained in 2023 might not work in 2026 because the "math" of the market has shifted.
@@ -70,14 +70,14 @@ Building a model is easy; making it work in the real world is hard. This project
 
 ---
 
-## 👨‍💻 How to Use
+##  How to Use
 1. **Install:** `pip install tensorflow pandas scikit-learn kagglehub matplotlib`
 2. **Execute:** Run `python model.py`
 3. **Customization:** Change the `ticker` variable in the script to predict any S&P 500 company (e.g., `NVDA`, `TSLA`, `MSFT`).
 
 ---
 
-## 📜 License & Disclaimer
+##  License & Disclaimer
 *This project is for educational purposes. Trading stocks involves significant risk of loss. The author is not responsible for any financial losses incurred from the use of this code.*
 
 
